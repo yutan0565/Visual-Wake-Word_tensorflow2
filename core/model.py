@@ -109,3 +109,6 @@ sample = tf.random.normal(input_shape)
 
 mobile = MobileNet_v1()
 mobile.model(input_shape).summary()
+
+from tensorflow.python.client import device_lib
+device_lib.list_local_devices()
